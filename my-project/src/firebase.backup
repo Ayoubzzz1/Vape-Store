@@ -1,0 +1,22 @@
+// firebaseConfig.js
+
+import firebase from 'firebase/app';
+
+import 'firebase/firestore';
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDPCr-sHn3m7BWwyIgXXZV-g_ReGYfHdqA",
+  authDomain: "my-project-a9a76.firebaseapp.com",
+  projectId: "my-project-a9a76",
+  storageBucket: "my-project-a9a76.appspot.com",
+  messagingSenderId: "1012892083457",
+  appId: "1:1012892083457:web:33848e6fcfc9b08e9a6700",
+  measurementId: "G-QF56LFKZKN"
+};
+
+// Initialize Firebase
+const app = firebase.initializeApp(firebaseConfig);
+
+export const auth = app.auth();
+export const firestore = app.firestore();
